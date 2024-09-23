@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif; /*Poppins Font*/
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative; /*It is a good practice to make a parent relative */
+}
+
+/*NAVBAR*/
+.navbar {
+  width: 100%;
+  height: 100px;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3vw;
+  /* border-bottom: 2px solid #dada; */
+}
+.navbar h2 {
+  font-size: 2vw;
+  font-weight: 600;
+}
+.navbar-links {
+  display: flex;
+  gap: 4vw;
+}
+.navbar-links h4 {
+  font-size: 1.1vw;
+  font-weight: 700;
+}
+.navbar-links i {
+  display: none;
+  font-weight: 800;
+}
+
+/*content -Wrapper*/
+.content-wrapper {
+  width: 100%;
+  height: calc(100% - 100px);
+  /* background-color: burlywood; */
+  display: flex;
+  position: relative;
+}
+.content-wrapper-left {
+  height: 100%;
+  width: 55%;
+  /* background-color: yellowgreen; */
+  padding: 5vw 3vw;
+}
+.content-wrapper-left h1 {
+  font-size: 4vw;
+  line-height: 4.4vw;
+}
+.content-wrapper-left p {
+  font-size: 1.2vw;
+  font-weight: 600;
+  color: #666;
+  width: 80%;
+  margin-top: 1.5vw;
+  margin-bottom: 3vw;
+}
+.content-wrapper-left h1 span {
+  color: #ff735c;
+}
+.content-wrapper-left button {
+  font-size: 1.2vw;
+  padding: 1vw 2vw;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #ff735c;
+  font-weight: 600;
+}
+.content-wrapper-right {
+  height: 100%;
+  width: 45%;
+}
+.content-wrapper-right img {
+  height: 100%;
+  width: 100%;
+}
+
+/* ================= 
+   MEDIA QURIES FOR MOBILE
+==================== */
+@media (max-width: 600px) {
+  .navbar {
+    /* background-color: lightseagreen;
+    color: #fff; */
+    padding: 0 6vw;
+    height: 60px;
+  }
+  .navbar h2 {
+    font-size: 5.1vw;
+  }
+  .navbar-links i {
+    display: block;
+    font-size: 6vw;
+  }
+  .navbar-links h4 {
+    display: none;
+  }
+  .content-wrapper {
+    height: calc(100% - 60px);
+    flex-direction: column;
+  }
+  .content-wrapper-left {
+    width: 100%;
+    height: 50%;
+    padding: 4vw 6vw;
+  }
+  .content-wrapper-left h1 {
+    font-size: 9vw;
+    line-height: 10.5vw;
+  }
+  .content-wrapper-left p {
+    font-size: 2.5vw;
+    width: 90%;
+    margin-top: 4vw;
+    margin-bottom: 6vw;
+  }
+  .content-wrapper-left button {
+    padding: 3vw 6vw;
+    font-size: 2.5vw;
+    border-radius: 3px;
+    font-weight: 600;
+  }
+  .content-wrapper-right {
+    width: 100%;
+    height: 50%;
+  }
+}
